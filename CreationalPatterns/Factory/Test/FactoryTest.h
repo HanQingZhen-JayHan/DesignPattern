@@ -5,7 +5,7 @@
 #ifndef DESIGNPATTERN_FACTORYTEST_H
 #define DESIGNPATTERN_FACTORYTEST_H
 
-#include "../../Base/Test.h"
+#include "../Base/Test.h"
 #include "../FactoryMethod/NYPizzaStore.h"
 #include "../FactoryMethod/ChicagoPizzaStore.h"
 

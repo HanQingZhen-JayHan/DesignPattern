@@ -5,7 +5,7 @@
 #ifndef DESIGNPATTERN_QUERYTEST_H
 #define DESIGNPATTERN_QUERYTEST_H
 
-#include "../../Base/Test.h"
+#include "../Base/Test.h"
 #include "../TextQuery.h"
 
 class QueryTest : public Test {

@@ -5,7 +5,7 @@
 #ifndef DESIGNPATTERN_PIZZASTORE_H
 #define DESIGNPATTERN_PIZZASTORE_H
 
-#include "../../Base/Object.h"
+#include "../Base/Object.h"
 #include "Pizza.h"
 #define PIZZA_STORE_NAME PizzaStore(__func__)
 class PizzaStore: public Object{

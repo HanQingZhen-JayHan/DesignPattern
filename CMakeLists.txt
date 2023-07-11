@@ -3,6 +3,11 @@ project(DesignPattern VERSION 0.1.0 LANGUAGES C CXX)
 
 include(CTest)
 enable_testing()
+
+# specify the C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 include_directories(Base)
 include_directories(BehaviourPatterns)
 include_directories(C++Primer)

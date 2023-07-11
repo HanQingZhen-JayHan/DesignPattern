@@ -5,7 +5,7 @@
 #ifndef DESIGNPATTERN_PIZZA_H
 #define DESIGNPATTERN_PIZZA_H
 
-#include "../../Base/Object.h"
+#include "../Base/Object.h"
 #define PIZZA_NAME Pizza(__func__)
 class Pizza:public Object{
 public:
