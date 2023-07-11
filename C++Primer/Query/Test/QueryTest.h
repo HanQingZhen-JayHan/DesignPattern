@@ -16,10 +16,10 @@ public:
         ifstream in("./Query/Test/story.txt");
         ofstream out;
         out.open("test.txt");
-        out<<"Hello";
+        out << "Hello";
         out.close();
         TextQuery textQuery(ifstream);
     }
 };
 
-#endif //DESIGNPATTERN_QUERYTEST_H
+#endif // DESIGNPATTERN_QUERYTEST_H

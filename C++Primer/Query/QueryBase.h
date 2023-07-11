@@ -11,7 +11,6 @@ class QueryBase : public Object {
     friend class Query;
 
 private:
-
 };
 
-#endif //DESIGNPATTERN_QUERYBASE_H
+#endif // DESIGNPATTERN_QUERYBASE_H

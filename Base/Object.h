@@ -15,10 +15,10 @@ using namespace std;
 class Object {
 protected:
     string name;
+
 public:
-    Object(const string &className) : name(move(className)) {
+    Object(const string& className) : name(move(className)) {
         cout << "Create  " << name << endl;
     }
-
 };
-#endif //DESIGNPATTERN_OBJECT_H
+#endif // DESIGNPATTERN_OBJECT_H

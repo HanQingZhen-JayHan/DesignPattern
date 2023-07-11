@@ -18,4 +18,4 @@ public:
     virtual void Run() const = 0;
 };
 
-#endif //DESIGNPATTERN_TEST_H
+#endif // DESIGNPATTERN_TEST_H

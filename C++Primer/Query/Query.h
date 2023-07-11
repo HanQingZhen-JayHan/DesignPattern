@@ -7,8 +7,6 @@
 
 #include "../Base/Object.h"
 
-class Query : public Object {
+class Query : public Object {};
 
-};
-
-#endif //DESIGNPATTERN_QUERY_H
+#endif // DESIGNPATTERN_QUERY_H

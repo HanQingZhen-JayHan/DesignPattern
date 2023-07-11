@@ -7,12 +7,10 @@
 
 #include "Pizza.h"
 
-class NYStylePepperoniPizza: public Pizza{
+class NYStylePepperoniPizza : public Pizza {
 public:
     NYStylePepperoniPizza() : PIZZA_NAME {}
 
-    void Prepare() override {
-        cout << "Prepare " << name << endl;
-    }
+    void Prepare() override { cout << "Prepare " << name << endl; }
 };
-#endif //DESIGNPATTERN_NYSTYLEPEPPERONIPIZZA_H
+#endif // DESIGNPATTERN_NYSTYLEPEPPERONIPIZZA_H

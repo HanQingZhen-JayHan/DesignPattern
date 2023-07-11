@@ -11,16 +11,15 @@
 
 class FactoryTest : public Test {
 public:
-    FactoryTest () : TEST_NAME {
-    }
+    FactoryTest() : TEST_NAME {}
 
-    void Run () const override {
+    void Run() const override {
         NYPizzaStore nyPizzaStore;
         ChicagoPizzaStore chicagoPizzaStore;
         PizzaStore& pizzaStore = nyPizzaStore;
-        pizzaStore.OrderPizza ("Cheese");
+        pizzaStore.OrderPizza("Cheese");
         PizzaStore* store = &chicagoPizzaStore;
-        store->OrderPizza ("Cheese");
+        store->OrderPizza("Cheese");
     }
 };
 
