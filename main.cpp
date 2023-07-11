@@ -1,13 +1,13 @@
 #include "CreationalPatterns/Factory/Test/FactoryTest.h"
-#include<iostream>
+#include <iostream>
 #include <ostream>
 #include <string>
-int main(){
+int main () {
 
     std::string msg;
-    std::cout<<"Hello World"<<std::endl;
+    std::cout << "Hello World" << std::endl;
 
     FactoryTest test;
-    test.Run();
+    test.Run ();
     return 0;
 }

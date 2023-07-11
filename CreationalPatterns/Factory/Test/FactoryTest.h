@@ -6,21 +6,22 @@
 #define DESIGNPATTERN_FACTORYTEST_H
 
 #include "../Base/Test.h"
-#include "../FactoryMethod/NYPizzaStore.h"
 #include "../FactoryMethod/ChicagoPizzaStore.h"
+#include "../FactoryMethod/NYPizzaStore.h"
 
 class FactoryTest : public Test {
 public:
-    FactoryTest() : TEST_NAME {}
+    FactoryTest () : TEST_NAME {
+    }
 
-    void Run() const override {
+    void Run () const override {
         NYPizzaStore nyPizzaStore;
         ChicagoPizzaStore chicagoPizzaStore;
-        PizzaStore &pizzaStore = nyPizzaStore;
-        pizzaStore.OrderPizza("Cheese");
-        PizzaStore *store = &chicagoPizzaStore;
-        store->OrderPizza("Cheese");
+        PizzaStore& pizzaStore = nyPizzaStore;
+        pizzaStore.OrderPizza ("Cheese");
+        PizzaStore* store = &chicagoPizzaStore;
+        store->OrderPizza ("Cheese");
     }
 };
 
-#endif //DESIGNPATTERN_FACTORYTEST_H
+#endif // DESIGNPATTERN_FACTORYTEST_H
