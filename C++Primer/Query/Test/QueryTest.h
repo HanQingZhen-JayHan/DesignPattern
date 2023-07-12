@@ -18,7 +18,7 @@ public:
         //starts from build
         ifstream in("../C++Primer/Query/Test/story.txt");
         TextQuery textQuery(in);
-        QueryResult result = textQuery.Query("Daddy");
+        QueryResult result = textQuery.Query("fiery");
         print(std::cout, result);
     }
 };

@@ -11,6 +11,7 @@
 #include <map>
 #include <set>
 #include <sstream>
+#include <string>
 #include <vector>
 
 
@@ -22,6 +23,7 @@ public:
             file->push_back(text);
             int n = file->size() - 1; // the current line number
             istringstream line(text);
+            //for test
             cout << n << " : " << text << endl;
             string word;
             while(line >> word) {
@@ -31,6 +33,11 @@ public:
                 }
                 lines->insert(n);
             }
+        }
+        // for test
+        for(auto map : wordMap) {
+            int len = map.second->size();
+            Log(map.first + " : " + to_string(len));
         }
     }
 
