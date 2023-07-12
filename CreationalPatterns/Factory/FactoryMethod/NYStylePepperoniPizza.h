@@ -11,6 +11,6 @@ class NYStylePepperoniPizza : public Pizza {
 public:
     NYStylePepperoniPizza() : PIZZA_NAME {}
 
-    void Prepare() override { cout << "Prepare " << name << endl; }
+    void Prepare() override { Log("Prepare " + name); }
 };
 #endif // DESIGNPATTERN_NYSTYLEPEPPERONIPIZZA_H

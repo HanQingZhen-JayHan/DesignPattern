@@ -12,7 +12,7 @@
 class Test : public Object {
 public:
     Test(const string name) : CLASS_NAME {
-        cout << "----------- Test " << name << " -----------" << endl;
+        Log("----------- Test " + name + " -----------");
     }
 
     virtual void Run() const = 0;

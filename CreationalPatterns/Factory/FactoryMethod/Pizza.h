@@ -11,8 +11,8 @@ class Pizza : public Object {
 public:
     Pizza(const string& n) : Object(n) {}
     virtual void Prepare() = 0;
-    void Bake() { cout << "Bake    " << name << endl; }
-    void Cut() { cout << "Cut     " << name << endl; }
-    void Box() { cout << "Box     " << name << endl; }
+    void Bake() { Log("Bake    " + name); }
+    void Cut() { Log("Cut     " + name); }
+    void Box() { Log("Box     " + name); }
 };
 #endif // DESIGNPATTERN_PIZZA_H

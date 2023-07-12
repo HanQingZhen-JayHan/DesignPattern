@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <string>
-
+#include "Log.h"
 #define CLASS_NAME Object(__func__)
 
 using namespace std;
@@ -18,7 +18,11 @@ protected:
 
 public:
     Object(const string& className) : name(move(className)) {
-        cout << "Create  " << name << endl;
+        Log::d("Create  " + name);
+    }
+
+    void Log(const string& str) {
+        Log::d(str);
     }
 };
 #endif // DESIGNPATTERN_OBJECT_H

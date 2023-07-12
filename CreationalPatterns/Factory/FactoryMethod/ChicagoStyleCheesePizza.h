@@ -11,6 +11,6 @@ class ChicagoStyleCheesePizza : public Pizza {
 public:
     ChicagoStyleCheesePizza() : PIZZA_NAME {}
 
-    void Prepare() override { cout << "Prepare " << name << endl; }
+    void Prepare() override { Log("Prepare " + name); }
 };
 #endif // DESIGNPATTERN_CHICAGOSTYLECHEESEPIZZA_H

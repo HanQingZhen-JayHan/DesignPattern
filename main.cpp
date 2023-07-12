@@ -1,13 +1,13 @@
 #include "CreationalPatterns/Factory/Test/FactoryTest.h"
-#include <iostream>
-#include <ostream>
-#include <string>
-int main() {
+#include "Query/QueryResult.h"
+#include "Query/Test/QueryTest.h"
 
-    std::string msg;
-    std::cout << "Hello World" << std::endl;
+#include "Base/Log.h"
+int main() {
+    Log::d("Hello World");
 
     FactoryTest test;
+    // QueryTest test;
     test.Run();
     return 0;
 }
