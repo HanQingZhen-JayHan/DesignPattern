@@ -21,7 +21,7 @@ public:
         Log::d("Create  " + name);
     }
 
-    void Log(const string& str) {
+    void Log(const string& str) const{
         Log::d(str);
     }
 };

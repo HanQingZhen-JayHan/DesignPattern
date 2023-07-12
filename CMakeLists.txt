@@ -14,6 +14,7 @@ include_directories(C++Primer)
 include_directories(CreatonalPatterns)
 include_directories(StructalPatterns)
 
+# the executalbe file in the build folder
 add_executable(DesignPattern main.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

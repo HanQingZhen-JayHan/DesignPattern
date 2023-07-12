@@ -8,7 +8,6 @@
 #include "Object.h"
 
 #define TEST_NAME Test(__func__)
-
 class Test : public Object {
 public:
     Test(const string name) : CLASS_NAME {

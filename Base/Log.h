@@ -14,6 +14,6 @@ public:
 
 private:
     Log() {}
-    inline static string TAG = "my ";
+    inline static string TAG = "my: ";
     static void Print(const string& str) { cout << TAG << str << endl; }
 };

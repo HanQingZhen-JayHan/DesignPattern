@@ -32,10 +32,10 @@ public:
 };
 
 inline ostream& print(ostream& os, const QueryResult& qr) {
-    os << qr.targetStr << "occurs " << qr.lineNoSet->size() << " "
+    os << qr.targetStr << " occurs " << qr.lineNoSet->size() << " "
        << make_plural(qr.lineNoSet->size(), "time", "s") << endl;
     for(auto num : *qr.lineNoSet) {
-        os << "\t(line" << num + 1 << ")" << *(qr.file->begin() + num) << endl;
+        os << "\t(line " << num + 1 << ") " << *(qr.file->begin() + num) << endl;
     }
     return os;
 }
