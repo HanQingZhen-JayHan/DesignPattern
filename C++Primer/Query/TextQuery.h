@@ -37,7 +37,7 @@ public:
         // for test
         for(auto map : wordMap) {
             int len = map.second->size();
-            Log(map.first + " : " + to_string(len));
+            //Log(map.first + " : " + to_string(len));
         }
     }
 
