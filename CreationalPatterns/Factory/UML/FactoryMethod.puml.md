@@ -1,3 +1,4 @@
+```plantuml
 @startuml
 'https://plantuml.com/class-diagram
 
@@ -14,11 +15,10 @@ class ConcreteProduct extends Product{
 }
 ConcreteCreator .l.> ConcreteProduct
 note top of Product
-<b>The Factory Method Pattern</b> defines an interface for creating an object,
+`<b>`The Factory Method Pattern`</b>` defines an interface for creating an object,
 but lets subclasses decide which class to instantiate.
 Factory Method lets a class defer instantiation to subclasses.
 end note
-
 
 abstract class Pizza
 abstract class PizzaStore{
@@ -46,5 +46,5 @@ ChicagoPizzaStore ..> ChicagoStylePepperoniPizza
 
 'Pizza -[hidden]r-> PizzaStore
 
-
 @enduml
+```
