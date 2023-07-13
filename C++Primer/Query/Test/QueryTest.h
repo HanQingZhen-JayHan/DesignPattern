@@ -25,6 +25,10 @@ public:
         Query q = Query("Daddy") | Query("Alice")& ~Query("Alice");
         QueryResult result = q.Eval(textQuery);
         print(std::cout, result);
+
+        Query q2 = Query("Alice") & ~Query("Alice") | Query("Daddy");
+        QueryResult result2 = q2.Eval(textQuery);
+        print(std::cout, result2);
     }
 };
 

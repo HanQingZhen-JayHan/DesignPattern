@@ -10,7 +10,6 @@
 #include "Query/QueryResult.h"
 #include "Query/TextQuery.h"
 #include "Query/WordQuery.h"
-#include <memory>
 
 class Query : public Object {
     friend Query operator~(const Query&);
