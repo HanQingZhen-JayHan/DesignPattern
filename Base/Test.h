@@ -9,7 +9,7 @@
 
 class Test : public Object {
 public:
-    Test(const string name) : Object(__func__) {
+    Test(const string name) : Object(name) {
         Log("----------- Test " + name + " -----------");
     }
 

@@ -8,9 +8,9 @@ int main() {
     Log::d("Hello World");
 
     // FactoryTest test;
-      QueryTest test;
+    //  QueryTest test;
     // IOTest test;
-    //DecoratorTest test;
+    DecoratorTest test;
     test.Run();
     return 0;
 }
