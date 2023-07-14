@@ -8,7 +8,7 @@
 class NotQuery : public QueryBase {
     friend Query operator~(const Query&);
     Query query;
-    NotQuery(const Query& q) : query(q) {}
+    NotQuery(const Query& q) : QueryBase(__func__), query(q) {}
     string Rep() const { return "~(" + query.Rep() + ")"; }
     QueryResult Eval(const TextQuery& t) const {
         auto res = query.Eval(t);

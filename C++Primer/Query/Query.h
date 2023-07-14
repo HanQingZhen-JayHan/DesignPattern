@@ -17,12 +17,12 @@ class Query : public Object {
     friend Query operator&(const Query&, const Query&);
 
 public:
-    Query(const string& s) : CLASS_NAME, q(new WordQuery(s)){};
+    Query(const string& s) : Object(__func__), q(new WordQuery(s)){};
     QueryResult Eval(const TextQuery& t) const { return q->Eval(t); }
     string Rep() const { return q->Rep(); }
 
 private:
-    Query(shared_ptr<QueryBase> query) : CLASS_NAME, q(query) {}
+    Query(shared_ptr<QueryBase> query) : Object(__func__), q(query) {}
     shared_ptr<QueryBase> q;
 };
 

@@ -7,7 +7,7 @@
 class WordQuery : public QueryBase {
     friend class Query;
     string queryWord;
-    WordQuery(const string& s) : queryWord(s) {}
+    WordQuery(const string& s) : QueryBase(__func__), queryWord(s) {}
     QueryResult Eval(const TextQuery& t) const { return t.Query(queryWord); }
     string Rep() const { return queryWord; }
 };

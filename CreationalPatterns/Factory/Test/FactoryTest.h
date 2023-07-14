@@ -11,7 +11,7 @@
 
 class FactoryTest : public Test {
 public:
-    FactoryTest() : TEST_NAME {}
+    FactoryTest() : Test(__func__) {}
 
     void Run() const override {
         NYPizzaStore nyPizzaStore;

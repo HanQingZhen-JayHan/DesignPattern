@@ -9,7 +9,7 @@
 
 class ChicagoStyleCheesePizza : public Pizza {
 public:
-    ChicagoStyleCheesePizza() : PIZZA_NAME {}
+    ChicagoStyleCheesePizza() : Pizza(__func__) {}
 
     void Prepare() override { Log("Prepare " + name); }
 };

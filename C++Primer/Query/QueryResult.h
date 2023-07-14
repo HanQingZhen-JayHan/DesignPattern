@@ -23,7 +23,7 @@ private:
 
 public:
     QueryResult(string str, shared_ptr<set<line_no>> lines, shared_ptr<vector<string>> file)
-    : CLASS_NAME, targetStr(str), lineNoSet(lines), file(file) {}
+    : Object(__func__), targetStr(str), lineNoSet(lines), file(file) {}
     shared_ptr<vector<string>> GetFile() { return file; }
     set<line_no>::iterator begin() { return lineNoSet->begin(); }
     set<line_no>::iterator end() { return lineNoSet->end(); }

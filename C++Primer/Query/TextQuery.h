@@ -17,13 +17,13 @@
 
 class TextQuery : public Object {
 public:
-    TextQuery(ifstream& is) : CLASS_NAME, file(new vector<string>) {
+    TextQuery(ifstream& is) : Object(__func__), file(new vector<string>) {
         string text;
         while(getline(is, text)) {
             file->push_back(text);
             int n = file->size() - 1; // the current line number
             istringstream line(text);
-            //for test
+            // for test
             cout << n << " : " << text << endl;
             string word;
             while(line >> word) {
@@ -37,7 +37,7 @@ public:
         // for test
         for(auto map : wordMap) {
             int len = map.second->size();
-            //Log(map.first + " : " + to_string(len));
+            // Log(map.first + " : " + to_string(len));
         }
     }
 

@@ -22,6 +22,6 @@ private:
     }
 
 public:
-    NYPizzaStore() : PIZZA_STORE_NAME {}
+    NYPizzaStore() : PizzaStore(__func__) {}
 };
 #endif // DESIGNPATTERN_NYPIZZASTORE_H

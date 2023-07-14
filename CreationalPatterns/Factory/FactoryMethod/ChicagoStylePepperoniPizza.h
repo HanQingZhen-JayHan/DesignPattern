@@ -9,7 +9,7 @@
 
 class ChicagoStylePepperoniPizza : public Pizza {
 public:
-    ChicagoStylePepperoniPizza() : PIZZA_NAME {}
+    ChicagoStylePepperoniPizza() : Pizza(__func__) {}
 
     void Prepare() override { Log("Prepare " + name); }
 };

@@ -7,7 +7,7 @@
 
 #include "../Base/Object.h"
 #include "Pizza.h"
-#define PIZZA_STORE_NAME PizzaStore(__func__)
+#define PizzaStore(__func__) PizzaStore(__func__)
 class PizzaStore : public Object {
 private:
     virtual Pizza* CreatePizza(const string& type) = 0;

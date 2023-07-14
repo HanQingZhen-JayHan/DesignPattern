@@ -22,6 +22,6 @@ private:
     }
 
 public:
-    ChicagoPizzaStore() : PIZZA_STORE_NAME {}
+    ChicagoPizzaStore() : PizzaStore(__func__) {}
 };
 #endif // DESIGNPATTERN_CHICAGOPIZZASTORE_H

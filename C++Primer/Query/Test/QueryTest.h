@@ -15,14 +15,14 @@
 
 class QueryTest : public Test {
 public:
-    QueryTest() : TEST_NAME {}
+    QueryTest() : Test(__func__) {}
 
     void Run() const override {
         // the root is in the build fold
         // starts from build
         ifstream in("../C++Primer/Query/Test/story.txt");
         TextQuery textQuery(in);
-        Query q = Query("Daddy") | Query("Alice")& ~Query("Alice");
+        Query q = Query("Daddy") | Query("Alice") & ~Query("Alice");
         QueryResult result = q.Eval(textQuery);
         print(std::cout, result);
 

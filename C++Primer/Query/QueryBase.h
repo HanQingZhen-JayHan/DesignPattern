@@ -12,6 +12,9 @@
 class QueryBase : public Object {
     friend class Query;
 
+public:
+    QueryBase(const string& name) : Object(name) {}
+
 protected:
     virtual ~QueryBase() = default;
 

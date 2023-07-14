@@ -6,7 +6,6 @@
 #define DESIGNPATTERN_PIZZA_H
 
 #include "../Base/Object.h"
-#define PIZZA_NAME Pizza(__func__)
 class Pizza : public Object {
 public:
     Pizza(const string& n) : Object(n) {}

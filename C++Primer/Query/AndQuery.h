@@ -13,7 +13,7 @@
 class AndQuery : public BinaryQuery {
     friend Query operator&(const Query&, const Query&);
     AndQuery(const Query& left, const Query& right)
-    : BinaryQuery(left, right, "&") {}
+    : BinaryQuery(__func__,left, right, "&") {}
     QueryResult Eval(const TextQuery& t) const {
         auto left = lhs.Eval(t), right = rhs.Eval(t);
         auto ret_lines = make_shared<set<line_no>>();

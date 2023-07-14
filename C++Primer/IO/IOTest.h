@@ -4,7 +4,7 @@
 #include <string>
 class IOTest : public Test {
 public:
-    IOTest() : TEST_NAME {}
+    IOTest() : Test(__func__) {}
     void Run() const override {
         Log("Test write operations.");
         Write(path);
@@ -16,7 +16,8 @@ public:
         Log("FilePath: " + path);
         ofstream out;
         out.open(path);
-        out << "The root is in the build folder and along with the executable file.";
+        out << "The root is in the build folder and along with the executable "
+               "file.";
         out.close();
     }
     void Read(const string& path) const {
