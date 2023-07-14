@@ -86,5 +86,9 @@ class Mocha extends CondimentDecorator{
 +string GetDescription()
 }
 Beverage -[hidden]u- ConcreteDecoratorB
+
+note right of Beverage
+Classes should be open for extension but closed for modificaton.
+end note
 @enduml
 ```
